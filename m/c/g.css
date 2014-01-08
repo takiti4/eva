@@ -1,10 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     background: #000 url(../i/bg.jpg) no-repeat 50% 0;
     height: 1500px;
+    color: #fed4b8;
+    -webkit-text-shadow: 1px 1px 0 #000;
+    -moz-text-shadow: 1px 1px 0 #000;
+    text-shadow: 1px 1px 0 #000;
+
 }
 .body {
     margin: auto;
@@ -39,7 +44,6 @@ body {
 }
 .menu ul li a {
     color: #ac9a99;
-    text-shadow: 1px 1px 0 #000;
     cursor: pointer;
     padding: 5px 7px;
     -webkit-transition: color .2s ease;
@@ -54,5 +58,87 @@ body {
 .con .left {
     position: relative;
     width: 630px;
-    height: 940px;
+    height: 924px;
+    margin: 14px
+}
+.help-box {
+    background: url(../i/tlbg.jpg) no-repeat;
+    width: 561px;
+    height: 310px;
+    margin: 25px;
+    padding: 5px 0 0 7px
+}
+.help-box > .item {
+    background: url(../i/tllbg.png) no-repeat;
+    height: 44px;
+    line-height: 44px;
+    margin:0px 0px 7px 0px;
+}
+.help-box > .item > div {
+    display: inline-block;
+
+}
+.help-box > .item ._l {
+    width: 280px;
+    padding: 0 0 0 10px;
+    color: #aeb9c8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    background: url(../i/line-border.png) no-repeat 100% 2px;
+}
+.help-box > .item ._r {
+    text-align: right;
+    width: 250px;
+    padding: 0 10px 0 0;
+    font-size: 11px;
+}
+.con-bg {
+    background: rgba(22, 8, 8, 0.5);
+    -webkit-box-shadow: inset 0 0 43px 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: inset 0 0 43px  rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 43px 10px rgba(0, 0, 0, .5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top: 1px solid #5c4e4a;
+    border-right: 1px solid #5a4d49;
+    border-bottom: 1px solid #2e2a29;
+    border-left: 1px solid #3d3432;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 559px;
+    margin: 25px;
+    padding: 8px 5px;
+}
+.text.full_width {
+    padding: 0 5px;
+}
+.text.col3 {
+    display: table;
+    width: 100%;
+}
+.text.col3 > span {
+    display: table-cell;
+    padding: 0 5px;
+}
+.text.col3 > span:nth-child(2) {
+    padding: 0 22px;
+}
+.text.col3 > span > h3 {
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 14px;
+    color: #aeb9c8;
+}
+.iHome {
+    background: url(../i/ihome.jpg) no-repeat;
+    width: 541px;
+    height: 146px;
+    margin: 0 auto 10px auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
 }
