@@ -45,27 +45,27 @@
 
                     <div class="help-box">
                         <div class="item">
-                            <div class="_l">Форумы</div>
+                            <div class="_l"><a href="#">Форумы</a></div>
                             <div class="_r">Начните общаться с другими пилотами.</div>
                         </div>
                         <div class="item">
-                            <div class="_l">Информация для игроков</div>
+                            <div class="_l"><a href="#">Информация для игроков</a></div>
                             <div class="_r">Всё, что нужно для принятия решений.</div>
                         </div>
                         <div class="item">
-                            <div class="_l">Eva Gate</div>
+                            <div class="_l"><a href="#">Eva Gate</a></div>
                             <div class="_r">Оставайтесь на связи с друзьями.</div>
                         </div>
                         <div class="item">
-                            <div class="_l">Ваша учетная запись</div>
+                            <div class="_l"><a href="#">Ваша учетная запись</a></div>
                             <div class="_r">Оплата подписки и прочие операции.</div>
                         </div>
                         <div class="item">
-                            <div class="_l">Служба поддержки</div>
+                            <div class="_l"><a href="#">Служба поддержки</a></div>
                             <div class="_r">Получите помощь от наших специалистов.</div>
                         </div>
                         <div class="item">
-                            <div class="_l">Обновление игры</div>
+                            <div class="_l"><a href="#">Обновление игры</a></div>
                             <div class="_r">Ознакомтесь со списком нововведений.</div>
                         </div>
                     </div>
@@ -109,8 +109,53 @@
 
                 </div>
                 <div class="right">
+                    <div class="block b_1">
+                        <div class="_h">Информация</div>
+                        <div class="_c">
 
+                        </div>
+                    </div>
+                    <div class="block b_2">
+                        <div class="_h">Скриншоты</div>
+                        <div class="_c">
+
+                        </div>
+                    </div>
+                    <div class="block b_3">
+                        <div class="_h">Видеоролик</div>
+                        <div class="_c">
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="footer">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a>Общий мир</a>
+                        </li>
+                        <li>
+                            <a>Своя Судьба</a>
+                        </li>
+                        <li>
+                            <a>Мультимедия</a>
+                        </li>
+                        <li>
+                            <a>Друзья</a>
+                        </li>
+                        <li>
+                            <a>Retrebution</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    &copy; 2013 - 2014, EveOnline. Все права защищены.
+                </div>
+                <div class="banner_88">
+                    <img src="m/i/88.png">
+                </div>
+                <div class="cc_p"></div>
             </div>
         </div>
     </body>

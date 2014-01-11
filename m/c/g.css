@@ -43,23 +43,24 @@ body {
     display: inline-block;
 }
 .menu ul li a {
-    color: #ac9a99;
+    color: #aeb9c8;
     cursor: pointer;
     padding: 5px 7px;
     -webkit-transition: color .2s ease;
     -moz-transition: color .2s ease;
     -ms-transition: color .2s ease;
-    text-decoration: none;
+    font-size: 13px;
 }
 .menu ul li:hover a {
-    color: #d4c1c0;
+    color: #C78181;
 }
 
 .con .left {
     position: relative;
-    width: 630px;
+    width: 624px;
     height: 924px;
-    margin: 14px
+    margin: 14px 0 14px 14px;
+    display: inline-block;
 }
 .help-box {
     background: url(../i/tlbg.jpg) no-repeat;
@@ -83,15 +84,28 @@ body {
     padding: 0 0 0 10px;
     color: #aeb9c8;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Times New Roman';
     background: url(../i/line-border.png) no-repeat 100% 2px;
+
+}
+.help-box > .item ._l a {
+    color: #aeb9c8;
+    text-decoration: none;
+    border-bottom:1px #aeb9c8 dashed;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+}
+.help-box > .item ._l a:hover {
+    color: #C78181;
+    border-bottom:1px #C78181 dashed;
 }
 .help-box > .item ._r {
     text-align: right;
     width: 250px;
     padding: 0 10px 0 0;
-    font-size: 11px;
+    font-size: 12px;
 }
 .con-bg {
     background: rgba(22, 8, 8, 0.5);
@@ -141,4 +155,32 @@ body {
     -moz-border-radius: 5px;
     border-radius: 5px;
 
+}
+
+.right {
+    vertical-align: top;
+    display: inline-block;
+    width: 281px;
+    position: relative;
+    left: -3px;
+    top: -11px;
+}
+.right .block ._h {
+    background: url(../i/right-head.png) no-repeat;
+    height: 61px;
+    text-align: center;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #c5c8cc;
+    font-family: 'Times New Roman';
+    font-size: 13px;
+}
+.b_1 {
+    background-position: 0 0;
+}
+.b_2 {
+    background-position: 0 50%;
+}
+.b_3 {
+    background-position: 0 100%;
 }
