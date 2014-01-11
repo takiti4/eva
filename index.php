@@ -5,15 +5,69 @@
         <title>Eva</title>
         <link rel="stylesheet" type="text/css" href="m/c/g.css">
         <link rel="stylesheet" type="text/css" href="m/c/mcs.css">
+        <link rel="stylesheet" media="screen"  href="m/c/jquery.fancybox.css">
+        <link rel="stylesheet" media="screen"  href="m/c/jquery.fancybox-buttons.css">
         <script src="m/j/jquery-1.9.1.min.js"></script>
         <script src="m/j/jquery.mousewheel.min.js"></script>
         <script src="m/j/jquery.mCustomScrollbar.min.js"></script>
+        <script src="m/j/jquery.fancybox.pack.js"></script>
+        <script src="m/j/jquery.fancybox-buttons.js"></script>
+        <script src="m/j/jquery.fancybox-media.js"></script>
+        <script src="m/j/jquery.slides.min.js"></script>
+
         <script>
             (function($){
                 $(window).load(function(){
                     $(".left").mCustomScrollbar();
                 });
             })(jQuery);
+
+            $(document).ready(function() {
+                $(".fancybox-button").fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    prevEffect		: 'none',
+                    nextEffect		: 'none',
+                    closeBtn		: false,
+                    helpers		: {
+                        title	: { type : 'inside' },
+                        buttons	: {}
+                    }
+                });
+                $('.fancybox-media').fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    closeBtn		: false,
+                    helpers : {
+                        media : {},
+                        title	: { type : 'inside' },
+                        buttons	: {}
+                    }
+                });
+                $('#slides').slidesjs({
+                    width: 208,
+                    height: 116,
+                    navigation: false,
+                    pagination: {
+                        effect: "fade"
+                    },
+                    effect: {
+                        fade: {
+                            speed: 400
+                        }
+                    },
+                    play: {
+                        active: false,
+                        effect: "fade",
+                        interval: 3000,
+                        auto: true,
+                        swap: true,
+                        pauseOnHover: true,
+                        restartDelay: 2500
+                    }
+                });
+
+            });
         </script>
     </head>
     <body>
@@ -112,19 +166,61 @@
                     <div class="block b_1">
                         <div class="_h">Информация</div>
                         <div class="_c">
+                            <div id="slides">
+                                <a href="#">
+                                    <img src="/m/slide/slide_1.jpg">
+                                </a>
+                                <a href="#">
+                                    <img src="/m/slide/slide_2.jpg">
+                                </a>
+                                <a href="#">
+                                    <img src="/m/slide/slide_3.jpg">
+                                </a>
+                            </div>
 
                         </div>
                     </div>
                     <div class="block b_2">
                         <div class="_h">Скриншоты</div>
                         <div class="_c">
+                            <div class="screen">
+                                <a class="fancybox-button" href="/m/screen/Crielere_Lolbrerie_SinqLaison.jpg" rel="fancybox-button">
+                                    <img src="/m/screen/ss_1.png">
+                                    <span>Увеличить</span>
+                                </a>
+                                <a class="fancybox-button" href="/m/screen/NewCaldari_Kimotoro_TheForge.jpg" rel="fancybox-button">
+                                    <img src="/m/screen/ss_2.png">
+                                    <span>Увеличить</span>
+                                </a>
+                                <div style="display: none">
+                                    <a class="fancybox-button" href="/m/screen/amarr_fleet_attack.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/gallente_dominix.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/ice_mining_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/implants_boosters_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/KhanidPrime_Nohsayess_Khanid.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/minmatar_wolfminmatar_wolf.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/MMD3B_730KH_GreatWildlands.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/planetary_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/research_landmark_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/SerpentisPrime_Phoenix_Fountain.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/sleeper_salvage_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/tech1_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/tech2_ui.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/war_fleet.jpg" rel="fancybox-button"></a>
+                                    <a class="fancybox-button" href="/m/screen/Yulai_Sanctum_Genesis.jpg" rel="fancybox-button"></a>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                     <div class="block b_3">
                         <div class="_h">Видеоролик</div>
                         <div class="_c">
-
+                            <div class="screen">
+                                <a class="fancybox-media" href="http://www.youtube.com/watch?v=lElTw27hDNs" rel="fancybox-video">
+                                    <img src="/m/screen/video.png">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,7 +249,6 @@
                     &copy; 2013 - 2014, EveOnline. Все права защищены.
                 </div>
                 <div class="banner_88">
-                    <img src="m/i/88.png">
                 </div>
                 <div class="cc_p"></div>
             </div>
